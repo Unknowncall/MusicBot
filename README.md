@@ -13,7 +13,6 @@ MusicBot can be quickly installed onto a websever that supports PHP, Javascript,
     2. Create a new table called requested_songs with the following columns. id int(11)	and youtube_url varchar(20).
     3. Assign id in table requested_songs to the primary key and have it auto increment.
     4. Open the folder you created on the webserver and create a new document called pdo_connect.php with the following code and replace the needed information.
-    ```php
     <?php
 
     $user = 'DB_USERNAME';
@@ -28,5 +27,4 @@ MusicBot can be quickly installed onto a websever that supports PHP, Javascript,
         die();
     }
     ?>
-    ```
     5. After all of this is complete, the website will load. You can begin to request songs in the request tab and you can view the queue at any time in the queue tab. To listen to the queue go to your url and add /index.php?page=player to the end of the url. This will load the player. Please note, only one user should be playing music at a time. This application is not built for multiplie people on different devices to be listening at the same time.
